@@ -28,6 +28,7 @@ function userStudent(username, req, res) {
 }
 
 const login = async function login(req, res) {
+  console.log("da vao dang nhap")
   const { username, password, type } = req.body;
   if (type == 'STUDENT') {
     const user = await userStudent(username, req, res);
